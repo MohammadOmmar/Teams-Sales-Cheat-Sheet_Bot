@@ -39,7 +39,7 @@ npm install
 npm start
 ```
 
-Open **(https://github.com/MohammadOmmar/Teams-Sales-Cheat-Sheet_Bot)** in your browser.
+Open **https://teams-sales-cheat-sheet-bot.onrender.com/** in your browser.
 
 ### Try It Out
 
