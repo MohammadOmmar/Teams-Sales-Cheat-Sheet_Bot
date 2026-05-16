@@ -1,4 +1,4 @@
-# SalesCheat Bot 🎯
+# SalesCheat Bot 
 
 **AI-powered Battle Card generator for recruiters — built as a Microsoft Teams integration.**
 
@@ -8,19 +8,19 @@ Drop a LinkedIn URL or a candidate bio, and get instant intel: 3 likely pain poi
 
 ---
 
-## ✨ Features
+##  Features
 
-- **🎯 Battle Card Generation** — Instant intel on any candidate with pain points, hooks, and approach strategy
-- **📊 Vector Database Matching** — Cosine similarity on TF-IDF embeddings matches candidates to top-performing templates
-- **📧 20+ Curated Templates** — Real outreach templates with performance scores and response rates
-- **🧠 Industry Knowledge Base** — 8 industries × 4 seniority levels = 32 pain point clusters
-- **💬 Microsoft Teams Bot** — Full Bot Framework integration with Adaptive Cards
-- **🌐 Web Demo UI** — Beautiful Teams-inspired simulator for portfolio showcase
-- **🌙 Dark/Light Mode** — Premium design with glassmorphism and smooth animations
+- ** Battle Card Generation** — Instant intel on any candidate with pain points, hooks, and approach strategy
+- ** Vector Database Matching** — Cosine similarity on TF-IDF embeddings matches candidates to top-performing templates
+- ** 20+ Curated Templates** — Real outreach templates with performance scores and response rates
+- ** Industry Knowledge Base** — 8 industries × 4 seniority levels = 32 pain point clusters
+- ** Microsoft Teams Bot** — Full Bot Framework integration with Adaptive Cards
+- ** Web Demo UI** — Beautiful Teams-inspired simulator for portfolio showcase
+- ** Dark/Light Mode** — Premium design with glassmorphism and smooth animations
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) v18 or higher
@@ -52,15 +52,15 @@ Open **http://localhost:3000** in your browser.
    Previously at Amazon AWS.
    ```
 3. The bot generates a **Battle Card** with:
-   - 📊 Parsed candidate profile
-   - 💥 3 likely pain points
-   - 🪝 Personalized hook message
-   - 📋 Approach strategy (tone, timing, channel)
-   - 📧 Top matching templates (with copy buttons)
+   -  Parsed candidate profile
+   -  3 likely pain points
+   -  Personalized hook message
+   -  Approach strategy (tone, timing, channel)
+   -  Top matching templates (with copy buttons)
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -92,7 +92,7 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ├── server/
@@ -123,7 +123,7 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## 🔧 Technical Stack
+##  Technical Stack
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
@@ -136,7 +136,7 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## 🤖 Teams Deployment
+##  Teams Deployment
 
 To deploy to Microsoft Teams:
 
@@ -150,7 +150,7 @@ See [docs/setup-guide.md](docs/setup-guide.md) for detailed instructions.
 
 ---
 
-## 📖 Documentation
+##  Documentation
 
 - [Architecture](docs/architecture.md) — Technical architecture deep dive
 - [Workflow Diagrams](docs/workflow-diagram.md) — Visual flow diagrams
@@ -159,7 +159,7 @@ See [docs/setup-guide.md](docs/setup-guide.md) for detailed instructions.
 
 ---
 
-## 📊 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -170,13 +170,13 @@ See [docs/setup-guide.md](docs/setup-guide.md) for detailed instructions.
 
 ---
 
-## 👨‍💻 Developer
+##  Developer
 
 - **Lead Developer**: Mohammad Ommar Waza (AI Analyst)
 - **Company**: Consulting Point
 - **LinkedIn**: [www.linkedin.com/in/ommanz](https://www.linkedin.com/in/ommanz)
 
-## 📄 License
+##  License
 
 
 MIT License
