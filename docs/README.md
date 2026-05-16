@@ -4,7 +4,6 @@
 
 Drop a LinkedIn URL or a candidate bio, and get instant intel: 3 likely pain points, a personalized hook, and top-performing outreach templates matched to the candidate's seniority and industry.
 
-![SalesCheat Bot Demo](docs/demo-screenshot.png)
 
 ---
 
