@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SalesCheat Bot — Battle card generator for recruiters. Get instant intel on candidates with pain points, hooks, and matched outreach templates.">
+  <title>SalesCheat Bot — Recruiter Battle Card Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="app-logo">
+          <div class="logo-icon">S</div>
+          <span class="logo-text">SalesCheat</span>
+        </div>
+        <button id="sidebar-toggle" class="icon-btn" aria-label="Toggle sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <span class="nav-label">Channels</span>
+          <a href="#" class="nav-item active" id="nav-bot">
+            <span class="nav-text">Battle Card Bot</span>
+            <span class="nav-badge" id="unread-badge" style="display:none">1</span>
+          </a>
+          <a href="#" class="nav-item" id="nav-templates">
+            <span class="nav-text">Template Library</span>
+          </a>
+        </div>
+        <div class="nav-section">
+          <span class="nav-label">Info</span>
+
+          <a href="#" class="nav-item" id="nav-about">
+            <span class="nav-text">About</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-avatar">
+          <div class="avatar-circle">MW</div>
+          <div class="status-dot online"></div>
+        </div>
+        <div class="user-info">
+          <span class="user-name">Mohammad Ommar Waza</span>
+          <span class="user-status">AI Analyst</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+      <!-- Chat Header -->
+      <header class="chat-header">
+        <div class="chat-header-left">
+          <button id="mobile-menu" class="icon-btn mobile-only" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+          <div class="chat-avatar">
+            <div class="bot-avatar">SC</div>
+          </div>
+          <div class="chat-info">
+            <h1 class="chat-name">SalesCheat Bot</h1>
+            <span class="chat-subtitle">Drop a LinkedIn URL or bio to get a Battle Card</span>
+          </div>
+        </div>
+        <div class="chat-header-right">
+          <button id="clear-chat" class="icon-btn" aria-label="Clear chat" title="Clear conversation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Chat Messages -->
+      <div id="chat-messages" class="chat-messages">
+        <!-- Welcome message -->
+        <div class="message bot-message welcome-msg" id="welcome-message">
+          <div class="message-avatar"><span>SC</span></div>
+          <div class="message-content">
+            <div class="message-bubble">
+              <div class="welcome-card">
+                <h2>Welcome to SalesCheat Bot</h2>
+                <p>Generate instant intel on candidates. Drop a <strong>LinkedIn URL</strong> or a <strong>candidate bio</strong> to get started.</p>
+                <div class="welcome-features">
+                  <div class="feature">
+                    <span class="feature-number">01</span>
+                    <span>3 likely pain points</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-number">02</span>
+                    <span>Personalized hooks</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-number">03</span>
+                    <span>Matched templates</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-number">04</span>
+                    <span>Approach strategy</span>
+                  </div>
+                </div>
+                <div class="quick-examples">
+                  <p class="examples-label">Try these examples:</p>
+                  <button class="example-btn" data-input="https://linkedin.com/in/sarah-chen-engineering">
+                    LinkedIn URL
+                  </button>
+                  <button class="example-btn" data-input="Senior Software Engineer at Google with 8 years of experience in cloud infrastructure, Kubernetes, and distributed systems. Previously at Amazon AWS. Looking for more ownership and less bureaucracy.">
+                    Tech Bio
+                  </button>
+                  <button class="example-btn" data-input="VP of Sales at a mid-stage SaaS startup. 12 years in B2B sales across fintech and enterprise software. Built and scaled teams from 5 to 40 reps. Frustrated with constant org restructuring.">
+                    Sales Leader
+                  </button>
+                  <button class="example-btn" data-input="Junior Data Analyst at Deloitte Consulting. 2 years experience with Python, SQL, and Tableau. Background in economics. Interested in transitioning to a tech company with better work-life balance.">
+                    Junior Analyst
+                  </button>
+                </div>
+              </div>
+            </div>
+            <span class="message-time">Just now</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Template Library Panel -->
+      <div id="template-panel" class="template-panel" style="display:none">
+        <div class="template-panel-header">
+          <h2>Template Library</h2>
+          <p>Browse our collection of top-performing outreach templates</p>
+          <div class="template-filters">
+            <select id="filter-seniority" class="filter-select">
+              <option value="">All Seniority</option>
+              <option value="junior">Junior</option>
+              <option value="mid">Mid-Level</option>
+              <option value="senior">Senior</option>
+              <option value="executive">Executive</option>
+            </select>
+            <select id="filter-industry" class="filter-select">
+              <option value="">All Industries</option>
+              <option value="technology">Technology</option>
+              <option value="finance">Finance</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="marketing">Marketing</option>
+              <option value="sales">Sales</option>
+              <option value="consulting">Consulting</option>
+            </select>
+          </div>
+        </div>
+        <div id="template-list" class="template-list"></div>
+      </div>
+
+
+
+      <!-- About Panel -->
+      <div id="about-panel" class="info-panel" style="display:none">
+        <div class="info-content">
+          <h2>About SalesCheat Bot</h2>
+          <div class="about-card">
+            <p>SalesCheat Bot is a <strong>Microsoft Teams integration</strong> designed to give recruiters real-time support on the sales floor. It generates instant intel on candidates — called <strong>Battle Cards</strong> — to help craft personalized, high-converting outreach.</p>
+            <h3>Technical Stack</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Bot Framework SDK</span>
+              <span class="tech-tag">Vector Database (JSON)</span>
+              <span class="tech-tag">Cosine Similarity</span>
+              <span class="tech-tag">TF-IDF Embeddings</span>
+              <span class="tech-tag">Adaptive Cards</span>
+              <span class="tech-tag">NLP Parsing</span>
+            </div>
+            <h3>Architecture</h3>
+            <ul>
+              <li><strong>Profile Parser</strong> — Extracts structured data from URLs and free text</li>
+              <li><strong>Battle Card Engine</strong> — Rule-based generator using an industry knowledge base</li>
+              <li><strong>Vector Store</strong> — JSON-based vector DB with TF-IDF embeddings</li>
+              <li><strong>Template Matcher</strong> — Cosine similarity matching with metadata bonuses</li>
+              <li><strong>Teams Bot Adapter</strong> — Microsoft Bot Framework for Teams deployment</li>
+            </ul>
+            <h3>Data</h3>
+            <ul>
+              <li>20+ curated outreach templates with performance scores</li>
+              <li>8 industries x 4 seniority levels = 32 pain point clusters</li>
+              <li>100+ dimension keyword vocabulary for vector embeddings</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div id="chat-input-area" class="chat-input-area">
+        <div class="input-container">
+          <div class="input-wrapper">
+            <textarea 
+              id="chat-input" 
+              class="chat-input" 
+              placeholder="Paste a LinkedIn URL or candidate bio..." 
+              rows="1"
+              aria-label="Message input"
+            ></textarea>
+            <button id="send-btn" class="send-btn" aria-label="Send message" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </div>
+          <div class="input-hints">
+            <span>Press <kbd>Enter</kbd> to send · <kbd>Shift+Enter</kbd> for new line</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

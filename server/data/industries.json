@@ -1,0 +1,260 @@
+{
+  "industries": {
+    "technology": {
+      "aliases": ["tech", "software", "it", "information technology", "computer science"],
+      "painPoints": {
+        "junior": [
+          "Limited mentorship and unclear career path in a fast-growing team",
+          "Pressure to deliver with minimal onboarding or documentation",
+          "Feeling of being a small cog in a massive engineering org"
+        ],
+        "mid": [
+          "Stuck in maintenance mode with no greenfield project opportunities",
+          "Technical debt slowing down innovation and personal growth",
+          "Lack of architectural ownership despite years of hands-on experience"
+        ],
+        "senior": [
+          "Politics and red tape blocking technical decisions they know are right",
+          "Compensated well but bored — solving the same class of problems repeatedly",
+          "Desire to build something from scratch rather than maintain legacy systems"
+        ],
+        "executive": [
+          "Board pressure to cut costs while maintaining innovation velocity",
+          "Difficulty attracting and retaining top engineering talent",
+          "Balancing technical vision with commercial realities and stakeholder demands"
+        ]
+      },
+      "hooks": {
+        "junior": "mentorship-first culture with rapid growth trajectory",
+        "mid": "greenfield projects with real architectural ownership",
+        "senior": "technical leadership with zero bureaucracy and high-impact problems",
+        "executive": "a company where technology drives the business, not the other way around"
+      },
+      "trends": ["AI/ML integration", "cloud-native architecture", "developer experience", "platform engineering"]
+    },
+    "finance": {
+      "aliases": ["financial services", "banking", "fintech", "investment", "wealth management"],
+      "painPoints": {
+        "junior": [
+          "Grueling hours with little work-life balance or flexibility",
+          "Highly competitive environment with limited collaboration",
+          "Doing repetitive analysis work that feels replaceable by automation"
+        ],
+        "mid": [
+          "Glass ceiling without an MBA or specific pedigree",
+          "Regulatory burden consuming time that could be spent on strategy",
+          "Compensation plateauing while responsibilities increase"
+        ],
+        "senior": [
+          "Innovation stifled by legacy systems and compliance constraints",
+          "Feeling like a cog in a massive institution with little personal impact",
+          "Market volatility creating organizational instability and restructuring anxiety"
+        ],
+        "executive": [
+          "Navigating AI disruption while maintaining regulatory compliance",
+          "Talent exodus to fintech startups offering better culture and equity",
+          "Pressure to digitally transform without disrupting core revenue streams"
+        ]
+      },
+      "hooks": {
+        "junior": "structured growth path with real deal exposure from day one",
+        "mid": "meritocratic culture where performance outweighs pedigree",
+        "senior": "a platform to drive real innovation with senior stakeholder backing",
+        "executive": "shape the future of finance with a board that backs bold moves"
+      },
+      "trends": ["embedded finance", "RegTech automation", "digital assets", "AI-driven risk modeling"]
+    },
+    "healthcare": {
+      "aliases": ["health", "medical", "biotech", "pharma", "medtech", "clinical"],
+      "painPoints": {
+        "junior": [
+          "Burnout from high-stakes, emotionally draining work environments",
+          "Slow career progression due to rigid hierarchies",
+          "Feeling disconnected from patient impact in administrative or tech roles"
+        ],
+        "mid": [
+          "Frustration with outdated technology and manual processes",
+          "Regulatory complexity slowing down meaningful innovation",
+          "Compensation lagging behind tech industry despite specialized expertise"
+        ],
+        "senior": [
+          "Being asked to do more with less as budgets tighten",
+          "Watching innovative ideas die in committee approval processes",
+          "Difficulty bridging clinical expertise with technology implementation"
+        ],
+        "executive": [
+          "Balancing patient outcomes with financial sustainability",
+          "Workforce shortages threatening operational capacity",
+          "AI adoption anxiety — moving too fast vs. being left behind"
+        ]
+      },
+      "hooks": {
+        "junior": "a mission-driven team where your work directly improves patient lives",
+        "mid": "modern tech stack meeting healthcare's biggest challenges",
+        "senior": "the authority and budget to actually implement your best ideas",
+        "executive": "lead a transformation that redefines how healthcare is delivered"
+      },
+      "trends": ["telehealth", "AI diagnostics", "personalized medicine", "health data interoperability"]
+    },
+    "marketing": {
+      "aliases": ["digital marketing", "brand", "advertising", "growth", "content"],
+      "painPoints": {
+        "junior": [
+          "Doing tactical execution without understanding the strategy behind it",
+          "Constantly shifting priorities making it hard to build deep expertise",
+          "Imposter syndrome in a field where everyone claims to be an expert"
+        ],
+        "mid": [
+          "Attribution remains a mess — hard to prove ROI of their work",
+          "Feeling like a cost center rather than a revenue driver",
+          "Martech stack bloat with too many tools and not enough integration"
+        ],
+        "senior": [
+          "CEO doesn't truly understand marketing's strategic value",
+          "Budget cuts are always marketing first despite revenue contribution",
+          "Balancing brand building with short-term performance demands"
+        ],
+        "executive": [
+          "Proving marketing's impact on pipeline revenue to a skeptical board",
+          "AI-generated content threatening the creative craft they value",
+          "Unifying fragmented customer data across channels and platforms"
+        ]
+      },
+      "hooks": {
+        "junior": "a team where you'll learn strategy, not just push pixels",
+        "mid": "full attribution visibility and a seat at the revenue table",
+        "senior": "a CEO who gets marketing and gives you the budget to prove it",
+        "executive": "build a marketing engine with full P&L ownership"
+      },
+      "trends": ["AI content creation", "privacy-first marketing", "community-led growth", "brand as moat"]
+    },
+    "sales": {
+      "aliases": ["business development", "account management", "revenue", "commercial"],
+      "painPoints": {
+        "junior": [
+          "Unrealistic quotas with insufficient training or enablement",
+          "Cold outreach burnout with low conversion and no mentorship",
+          "CRM busy-work eating into actual selling time"
+        ],
+        "mid": [
+          "Territory or account changes that reset their pipeline progress",
+          "Commission structure changes that feel designed to reduce payouts",
+          "Product gaps making it harder to compete against well-funded rivals"
+        ],
+        "senior": [
+          "Managing a team while still carrying a personal quota",
+          "Leadership promising resources that never materialize",
+          "Feeling like a number rather than a strategic partner to the business"
+        ],
+        "executive": [
+          "Scaling revenue while maintaining deal quality and customer satisfaction",
+          "Sales and marketing misalignment creating pipeline friction",
+          "Retaining top performers in a hyper-competitive talent market"
+        ]
+      },
+      "hooks": {
+        "junior": "world-class sales training and an achievable ramp plan",
+        "mid": "protected territory, transparent comp, and a product that sells itself",
+        "senior": "pure leadership role with a high-performing team already in place",
+        "executive": "a PLG motion that means your team sells, not just pitches"
+      },
+      "trends": ["AI-powered sales intelligence", "product-led growth", "revenue operations", "buyer-first selling"]
+    },
+    "consulting": {
+      "aliases": ["management consulting", "advisory", "professional services", "strategy"],
+      "painPoints": {
+        "junior": [
+          "Brutal travel schedule destroying work-life balance",
+          "Building skills for clients but never for a product you own",
+          "Up-or-out culture creating constant anxiety about tenure"
+        ],
+        "mid": [
+          "Wanting to build something rather than advise others on building",
+          "Realizing industry expertise makes them valuable outside consulting",
+          "Compensation ceiling without making partner"
+        ],
+        "senior": [
+          "Business development responsibilities overshadowing the actual work they enjoy",
+          "Questioning whether their impact is real or just PowerPoint-deep",
+          "Desire to see their recommendations actually implemented, not just filed"
+        ],
+        "executive": [
+          "Attracting top talent away from tech companies with better perks",
+          "AI disruption threatening traditional consulting delivery models",
+          "Clients demanding more value for less budget"
+        ]
+      },
+      "hooks": {
+        "junior": "all the intellectual stimulation of consulting, but you build the thing too",
+        "mid": "your consulting toolkit applied to one mission you truly own",
+        "senior": "see your strategies executed, not just presented",
+        "executive": "build a practice area from scratch with full P&L authority"
+      },
+      "trends": ["AI-augmented consulting", "fractional executive placements", "outcome-based pricing", "digital transformation"]
+    },
+    "engineering": {
+      "aliases": ["mechanical engineering", "civil engineering", "electrical engineering", "manufacturing", "industrial"],
+      "painPoints": {
+        "junior": [
+          "CAD work and documentation with limited exposure to real projects",
+          "Slow progression in traditional hierarchical engineering firms",
+          "Feeling disconnected from the actual impact of their designs"
+        ],
+        "mid": [
+          "Innovation constrained by budget limitations and risk-averse management",
+          "Certification and compliance burden consuming creative energy",
+          "Compensation lagging behind software engineering peers"
+        ],
+        "senior": [
+          "Transitioning from technical work to management against their preference",
+          "Outdated tools and processes that competitors have already modernized",
+          "Knowledge transfer challenges with aging workforce"
+        ],
+        "executive": [
+          "Sustainability mandates requiring fundamental process redesigns",
+          "Supply chain volatility impacting project timelines and costs",
+          "Digital twin and IoT adoption pressure with unclear ROI"
+        ]
+      },
+      "hooks": {
+        "junior": "hands-on project exposure from month one, not year two",
+        "mid": "a company investing in next-gen tools and continuous innovation",
+        "senior": "stay technical forever — no forced management track",
+        "executive": "lead the industry's digital transformation with real budget and backing"
+      },
+      "trends": ["digital twins", "sustainable engineering", "AI-driven design", "additive manufacturing"]
+    },
+    "data-science": {
+      "aliases": ["data analytics", "machine learning", "ai", "artificial intelligence", "data engineering"],
+      "painPoints": {
+        "junior": [
+          "Hired as a 'data scientist' but spending 80% of time cleaning data",
+          "No clear MLOps pipeline making deployment a nightmare",
+          "Isolated from business stakeholders who could give their work meaning"
+        ],
+        "mid": [
+          "Models built but never deployed to production",
+          "Organizational data maturity too low to leverage their skills",
+          "Feeling like a support function rather than a strategic asset"
+        ],
+        "senior": [
+          "Building sophisticated models that leadership doesn't understand or trust",
+          "Ethical AI concerns being dismissed for speed-to-market",
+          "Infrastructure limitations preventing work at meaningful scale"
+        ],
+        "executive": [
+          "AI hype creating unrealistic expectations from the board",
+          "Data governance and privacy regulation complexity",
+          "Building a data culture in an organization that 'doesn't get it yet'"
+        ]
+      },
+      "hooks": {
+        "junior": "real ML engineering, not just Jupyter notebooks — your models ship",
+        "mid": "a data-mature org where your models go to production, not a presentation",
+        "senior": "state-of-the-art infrastructure with GPU budget and research freedom",
+        "executive": "a board that understands AI and invests accordingly"
+      },
+      "trends": ["LLM fine-tuning", "real-time ML", "data mesh architecture", "responsible AI"]
+    }
+  }
+}

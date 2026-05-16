@@ -1,0 +1,67 @@
+SALESCHEAT BOT: PROJECT MODEL OVERVIEW
+Prepared by: Mohammad Ommar Waza (AI Analyst)
+Company: Consulting Point
+======================================
+
+EXECUTIVE SUMMARY & PRESENTATION
+--------------------------------
+This project introduces the "SalesCheat Bot," an advanced Microsoft Teams integration engineered by Mohammad Ommar Waza at Consulting Point to bridge the gap between high-volume recruitment and personalized candidate engagement. By leveraging a proprietary AI-driven model, the bot automates the complex task of "candidate intelligence" gathering. It empowers recruiters with real-time, data-backed insights, transforming how our team prepares for outreach. This model optimizes recruiter efficiency by providing high-conversion hooks and pain-point analysis in seconds, ensuring our communications are consistently relevant and highly competitive in a crowded market.
+
+PROJECT OVERVIEW
+----------------
+The SalesCheat Bot serves as a unified intelligence layer for the recruitment floor. It functions by ingesting raw candidate data (LinkedIn profiles or resumes) and outputting a comprehensive "Battle Card." This process is underpinned by specialized NLP parsing and a semantic vector engine that matches candidates to high-performing outreach strategies. The result is a more resilient, AI-assisted recruitment process that scales personalized communication without increasing manual workload.
+
+WEBSITE INTERFACE & WORKING DETAILS
+-----------------------------------
+In addition to the Teams integration, the project includes a premium, high-fidelity web-based "Teams Simulator." This interface allows for standalone demonstrations and platform-independent analysis.
+
+Key Website Features:
+- Teams-Inspired Chat UI: A clean, minimal light-only interface designed for maximum information clarity.
+- Interactive Sidebar: Quick navigation between the Battle Card Bot, a comprehensive Template Library, and technical documentation.
+- Live Template Library: A filterable directory of 20+ recruiters' templates, categorized by seniority and industry with real-time performance metrics (reply rates and success scores).
+- Quick-Start Examples: One-click buttons (LinkedIn URL, Tech Bio, Sales Leader, etc.) to instantly demonstrate the AI's parsing and matching capabilities.
+
+STEP-BY-STEP OPERATION
+----------------------
+1. DATA INPUT: The user provides a LinkedIn URL or a free-text professional bio in the chat interface.
+2. INTELLIGENT PARSING: The AI (NLP) engine instantly scans the text to determine candidate metadata (Current Title, Seniority Level, Primary Industry, and Key Skills).
+3. ANALYTIC GENERATION: The system maps this data against a proprietary knowledge base to generate three contextual "Pain Points" and a personalized "Suggested Hook."
+4. VECTOR TEMPLATE MATCHING: The candidate's "Professional Vector" is compared against the database of outreach templates using cosine similarity to find the most relevant communication style.
+5. INTERACTIVE BATTLE CARD: The results are rendered in an interactive card, allowing the recruiter to click-to-copy hooks and messages directly into their outreach tools.
+
+GOAL
+----
+The Teams Sales Cheat Sheet Bot is a high-performance recruitment intelligence tool designed for real-time support on the sales floor. It provides consultants with instant, actionable intel on candidates to improve outreach conversion rates.
+
+HOW IT WAS BUILT (AI & ARCHITECTURE)
+The system was developed using a multi-layered AI approach to ensure accuracy and speed without relying on expensive external APIs:
+
+1. Natural Language Processing (NLP) Parser:
+   The bot uses a custom NLP engine to deconstruct unstructured data (LinkedIn URLs or raw bios). It extracts key entities including seniority, industry, specific technical skills, current company, and professional title.
+
+2. Rule-Based Intelligence Engine:
+   A sophisticated matrix-based logic system maps the parsed candidate profile against an extensive industry knowledge base. This engine identifies specific pain points shared by professionals in that specific sector and seniority level.
+
+3. Vector Database & Semantic Similarity:
+   The project features a built-in vector database (JSON-based) that uses TF-IDF (Term Frequency-Inverse Document Frequency) algorithms. It converts candidate profiles and outreach templates into 100+ dimension vectors. By calculating the "Cosine Similarity" between these vectors, the AI identifies the highest-performing message templates for that specific person.
+
+KEY OUTPUTS: THE BATTLE CARD
+For every candidate processed, the AI generates a customized "Battle Card" featuring:
+- 3 Likely Pain Points: Categorized by severity (High, Medium, Moderate).
+- Suggested Hook: A personalized opening line designed to trigger a response.
+- Approach Strategy: Guidance on communication tone, optimal timing, and the best channel for outreach.
+- Template Matching: The top 3 outreach templates from a library of 20+ high-performing messages, ranked by their similarity score to the candidate.
+
+DESIGN PHILOSOPHY
+The interface follows a "Minimal-Solid" design language:
+- Clean light theme with sharp contrasts.
+- Zero-emoji professional environment.
+- Information-dense layout optimized for fast reading during active recruiting sessions.
+- Fully integrated with Microsoft Teams via the Bot Framework SDK.
+
+TECHNICAL STACK
+- Backend: Node.js, Express
+- Integration: Microsoft Bot Framework
+- Data: Structured JSON Vector Store
+- Logic: Semantic Matcher & Rule-based AI Engine
+- Frontend: Vanilla JavaScript, HTML5, Minimal CSS3

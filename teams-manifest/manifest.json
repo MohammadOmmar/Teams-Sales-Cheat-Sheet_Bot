@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "{{MICROSOFT_APP_ID}}",
+  "developer": {
+    "name": "Mohammad Ommar Waza (Consulting Point)",
+    "websiteUrl": "https://www.linkedin.com/in/ommanz",
+    "privacyUrl": "https://www.linkedin.com/in/ommanz/privacy",
+    "termsOfUseUrl": "https://www.linkedin.com/in/ommanz/terms"
+  },
+  "name": {
+    "short": "SalesCheat Bot",
+    "full": "SalesCheat Bot — Recruiter Battle Card Generator"
+  },
+  "description": {
+    "short": "Get instant intel on candidates with AI-powered battle cards",
+    "full": "SalesCheat Bot is a Microsoft Teams integration that helps recruiters generate instant battle cards on candidates. Drop a LinkedIn URL or a bio, and get 3 likely pain points, a suggested hook, and top-performing outreach templates matched to the candidate's seniority and industry."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#6366f1",
+  "bots": [
+    {
+      "botId": "{{MICROSOFT_APP_ID}}",
+      "scopes": ["personal", "team", "groupChat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal"],
+          "commands": [
+            {
+              "title": "help",
+              "description": "Show help and usage instructions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["*.botframework.com", "{{CUSTOM_DOMAIN}}"]
+}
