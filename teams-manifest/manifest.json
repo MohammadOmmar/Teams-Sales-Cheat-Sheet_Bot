@@ -5,9 +5,9 @@
   "id": "{{MICROSOFT_APP_ID}}",
   "developer": {
     "name": "Mohammad Ommar Waza (Consulting Point)",
-    "websiteUrl": "https://www.linkedin.com/in/ommanz",
-    "privacyUrl": "https://www.linkedin.com/in/ommanz/privacy",
-    "termsOfUseUrl": "https://www.linkedin.com/in/ommanz/terms"
+    "websiteUrl": "https://teams-sales-cheat-sheet-bot.onrender.com",
+    "privacyUrl": "https://teams-sales-cheat-sheet-bot.onrender.com/privacy",
+    "termsOfUseUrl": "https://teams-sales-cheat-sheet-bot.onrender.com/terms"
   },
   "name": {
     "short": "SalesCheat Bot",
@@ -42,5 +42,5 @@
     }
   ],
   "permissions": ["identity", "messageTeamMembers"],
-  "validDomains": ["*.botframework.com", "{{CUSTOM_DOMAIN}}"]
+  "validDomains": ["*.botframework.com", "teams-sales-cheat-sheet-bot.onrender.com"]
 }
