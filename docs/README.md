@@ -39,7 +39,7 @@ npm install
 npm start
 ```
 
-Open **http://localhost:3000** in your browser.
+Open **[http://localhost:3000](https://github.com/MohammadOmmar/Teams-Sales-Cheat-Sheet_Bot)** in your browser.
 
 ### Try It Out
 
